@@ -1,0 +1,23 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  text-align: center;
+  padding: 2rem;
+  border: 5px solid rgb(23, 47, 54);
+  margin: 1rem;
+  p {
+    font-weight: 400;
+    .googleApi {
+      color: green;
+      font-weight: 700;
+    }
+    .nasaApi {
+      color: darkblue;
+      font-weight: 700;
+    }
+  }
+}

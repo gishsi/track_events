@@ -1,0 +1,49 @@
+.menu {
+  width: 400px;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  margin: 1rem;
+  text-align: center;
+  border: 5px solid rgb(33, 71, 83);
+  h1 {
+    display: block;
+    position: relative;
+    padding: 1rem;
+    padding-bottom: 0;
+    &::after {
+      content: '';
+      background-color: rgb(70, 190, 226);
+      width: 260px;
+      height: 30px;
+      display: block;
+      left: 20%;
+      top: 50%;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  ul {
+    padding: 1rem;
+    .menu-item {
+      position: relative;
+      &:hover {
+        cursor: pointer;
+        font-weight: bold;
+        &::before {
+          position: absolute;
+          content: '';
+          background-color: rgb(177, 158, 231);
+          top: 10px;
+          z-index: -1;
+          width: 90px;
+          height: 10px;
+          left: 40%;
+        }
+      }
+    }
+  }
+}
